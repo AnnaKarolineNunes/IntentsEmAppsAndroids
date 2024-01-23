@@ -30,3 +30,10 @@ Se desejarmos, por exemplo, direcionar o usuário automaticamente para uma chama
     }
 
 Nota: Lembre-se de adaptar os detalhes conforme necessário para atender às necessidades específicas do seu aplicativo.
+
+## Passo a passo 2: Direcionando o app para uma imagem 
+ ```
+   String imagem = "https://ichef.bbci.co.uk/news/640/cpsprodpb/cffb/live/f5d7e3a0-b770-11ed-89f4-f3657d2bfa3b.jpg";
+   Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(imagem));
+   startActivity(intent);
+
